@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Method retrive data by structure tree</title>
+</head>
+<body>
+    <p id="lolo"></p>
+    <p id="demo">Chao cac ban</p>
+    <script>
+        document.getElementById('lolo').nextSibling.nodeValue=document.getElementById('demo').childNodes[0].nodeValue;
+        //lastChild.nodeValue == innerHTML (but it make you know about tree structer)
+        //Xem lại sơ đồ của https://www.w3schools.com/js/js_htmldom_navigation.asp về tree relationship
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Load Page</title>
+</head>
+<body onload="x()">    
+    <p id="demo"></p>
+    <script>
+        //Check cookie
+        var x = ()=>{
+            if(navigator.cookieEnabled==true){
+                document.getElementById('demo').innerHTML="Cookie enabled";
+            }
+            else{
+                document.getElementById('demo').innerHTML="Cookie disabled";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1 class="meme">Choose 1</h1>
+    <h1 class="meme">Choose 2</h1>
+    <p id="fuck"></p> -->
+
+    <form id="frm1" action="/action_page.php">
+      First name: <input type="text" name="fname" value="Donald" /><br />
+      Last name: <input type="text" name="lname" value="Duck" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>Click "Try it" to display the value of each element in the form.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+      //Finding with Tag name
+      // var x = document.getElementById('demo');
+      // var y = x.getElementsByTagName('h1');               // Lay theo tag name ==> Collection object tag name do
+      // document.getElementById('fuck').innerHTML=y[0].innerHTML;
+
+      //Finding with class name HTML
+      //var x = document.getElementsByClassName("meme")[1].innerHTML;
+      //document.getElementById('fuck').innerHTML=x;
+
+      //Finding with selector
+      //var x = document.querySelectorAll('h1.meme');
+      //document.getElementById('fuck').innerHTML=x[0].innerHTML;
+
+      //Finding with Object Collection
+      
+      var myFunction=()=>{
+        var x = document.forms['frm1'];
+        var text="";
+        for(let i = 0;i<x.length;i++){
+            text+=x.elements[i].value+"<br>";
+        }
+        document.querySelectorAll('p#demo')[0].innerHTML=text;
+      }
+      window.ale
+        
+    </script>
+  </body>
+</html>
